@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Notes | Marcello Ghini Bettiol</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+   <div class="header-container">
+      <div class="site-name">
+        <a href="index.html" style="text-decoration: none; color: white"><span style="font-size: 1.2em;">Marcello Ghini Bettiol</span></a>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="notes.html" class="nav-link active">Math Notes</a>
+        <a href="cv.html" class="nav-link">Bio and CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Math Notes</h1>
+    <p>This is a repository of some my (mostly hand-written) notes produced over the years when studying various Math subjects. Every user of the following notes should be aware that their author has been trying to eliminate the colony of typos that has been infesting them for the past years. The progress has been steady so far, but extremely slow.</p>
+    <div class="text-multi-image-row container">
+      <div class="multi-text-block">    
+        <p style="line-height: 2.0;"><b>Notes</b><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/analysis2.pdf" target="_blank" download style="text-decoration: none">Analysis II (PDF)</a><br>         
+        <span class="bullet-square">&#9633;</span><a href="math_notes/complex_analysis.pdf" target="_blank" download style="text-decoration: none">Complex Analysis (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/differential_geometry.pdf" target="_blank" download style="text-decoration: none">Differential Geometry (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/differential_topology.pdf" target="_blank" download style="text-decoration: none">Differential Topology (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/hamiltonian_mechanics.pdf" target="_blank" download style="text-decoration: none">Hamiltonian Mechanics (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/math_qm.pdf" target="_blank" download style="text-decoration: none">Quantum Mechanics (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/nonlinear_physics.pdf" target="_blank" download style="text-decoration: none">Nonlinear Physics (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/odes.pdf" target="_blank" download style="text-decoration: none">ODEs (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/pdes.pdf" target="_blank" download style="text-decoration: none">PDEs (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/probability1.pdf" target="_blank" download style="text-decoration: none">Probability I (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/probability2.pdf" target="_blank" download style="text-decoration: none">Probability II (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/real_analysis1.pdf" target="_blank" download style="text-decoration: none">Real Analysis I (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/riemannian_geometry.pdf" target="_blank" download style="text-decoration: none">Riemannian Geometry (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/APM426_Final_Project.pdf" target="_blank" download style="text-decoration: none">Riemannian Positive Mass Theorem (PDF)</a>
+        <p style="line-height: 2.0;"><b>Talks</b><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/talk_RPMT.pdf" target="_blank" download style="text-decoration: none">A Positive Mass Theorem (PDF)</a><br> 
+        <span class="bullet-square">&#9633;</span><a href="math_notes/talk_triangulations_3-manifolds.pdf" target="_blank" download style="text-decoration: none">Triangulations of 3-manifolds (PDF)</a><br>
+        <span class="bullet-square">&#9633;</span><a href="math_notes/talk_Weinstein_3-manifolds.pdf" target="_blank" download style="text-decoration: none">Contact Structures and Weinstein<sub>3</sub> (PDF)</a>
+        </p>    
+      </div>
+      <div class="multi-image-group">
+        <img src="pictures/asymptotically_flat.jpeg" alt="asym_flat" style="width: 470px; height: auto; margin-bottom: 40px;" />
+        <img src="pictures/triangulation.png" alt="triang" style="width: 250px; height: auto; margin-bottom: 40px;" />
+      </div>
+    </div>
+    <p><u>P.S.:</u> If you are using these notes, it would be kind of you to let me know. It is always pleasant to hear that your work was useful to others.</p>    
+  </div>
+</body>
+
+<footer>
+  <p class="footer-text">Last modified: <span id="last-modified"></span>
+
+  <script>
+    const lastMod = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById("last-modified").textContent = lastMod.toLocaleDateString('en-US', options);
+  </script>
+
+  </p>
+<!--  <p class="footer-text">© 2025 Marcello Ghini Bettiol</p> -->
+</footer>
+
+</html>

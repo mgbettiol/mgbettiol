@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bio and CV | Marcello Ghini Bettiol</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+   <div class="header-container">
+      <div class="site-name">
+        <a href="index.html" style="text-decoration: none; color: white"><span style="font-size: 1.2em;">Marcello Ghini Bettiol</span></a>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="notes.html" class="nav-link">Math Notes</a>
+        <a href="cv.html" class="nav-link active">Bio and CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="text-image-row">
+      <div class="text-block">
+        <h1>Bio</h1>
+        <p>
+          I was born and grew up in <a href="https://en.wikipedia.org/wiki/Campinas" target="_blank" style="text-decoration: none">Campinas, Brazil</a>. During 2014 and 2015, I lived in <a href="https://en.wikipedia.org/wiki/Salamanca" target="_blank" style="text-decoration: none">Salamanca, Spain</a>. I graduated from the University of Toronto with an Honors B.Sc. (<i>summa cum laude</i>) in Mathematics and Physics in 2024, and an M.Sc. in Mathematics in 2025 under the supervision of <a href="https://www.math.toronto.edu/kserkh/" target="_blank" style="text-decoration: none">Kirill Serkh</a>.
+        </p>
+        <p>
+          In the Fall of 2025, I started a Ph.D. in Computational and Applied Mathematics in the <a href="https://cam.uchicago.edu/" target="_blank" style="text-decoration: none">Committee on Computational and Applied Mathematics</a> at the University of Chicago. I am honored to be the recipient of a McCormick Fellowship (2025).
+        </p>
+        <h1>CV</h1>
+        <p><a href="vitae/Curriculum Vitae.pdf" download target="_blank" style="text-decoration: none">Curriculum vitae (PDF)</a></p>        
+      </div>
+      <img src="pictures/profile4.jpeg" alt="profile4" class="side-image" />
+    </div>
+  </div>
+</body>
+
+<footer>
+  <p class="footer-text">Last modified: <span id="last-modified"></span>
+
+  <script>
+    const lastMod = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById("last-modified").textContent = lastMod.toLocaleDateString('en-US', options);
+  </script>
+
+  </p>
+<!--  <p class="footer-text">© 2025 Marcello Ghini Bettiol</p> -->
+</footer>
+
+</html>

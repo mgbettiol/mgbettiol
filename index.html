@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home | Marcello Ghini Bettiol</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+   <div class="header-container">
+      <div class="site-name">
+        <a href="index.html" style="text-decoration: none; color: white"><span style="font-size: 1.2em;">Marcello Ghini Bettiol</span></a>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="notes.html" class="nav-link">Math Notes</a>
+        <a href="cv.html" class="nav-link">Bio and CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="text-image-row">
+      <div class="text-block">
+        <p>
+          Since 2025, I am a Ph.D. student in the <a href="https://cam.uchicago.edu/" target="_blank" style="text-decoration: none">Committee on Computational and Applied Mathematics</a> at the University of Chicago. See my <a href="cv.html" style="text-decoration: none">bio</a> or my <a href="vitae/Curriculum Vitae.pdf" download target="_blank" style="text-decoration: none">CV</a> for a few more brief details on my life.
+        </p>
+        <p>
+          My current research lies in an intersection between <i><a href="https://en.wikipedia.org/wiki/Mathematical_physics" target="_blank" style="text-decoration: none">Mathematical Physics</a>, <a href="https://en.wikipedia.org/wiki/Mathematical_analysis" target="_blank" style="text-decoration: none">Analysis</a>, <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank" style="text-decoration: none">Probability</a>, <a href="https://en.wikipedia.org/wiki/Random_matrix" target="_blank" style="text-decoration: none">Random Matrix Theory</a>, and <a href="https://en.wikipedia.org/wiki/Numerical_analysis" target="_blank" style="text-decoration: none">Numerical Analysis</a></i>. Recently, I have been interested in the theory behind lattice models that appear in statistical physics, among other cute geometric problems with physical motivations. See my <a href="research.html" style="text-decoration: none">research page</a> for more details.
+        </p>
+        <p>
+          Some notes on various Math subjects I studied can be found in my <a href="notes.html" style="text-decoration: none">Math notes page</a>.
+        </p>
+        <div class="text-image-row">
+          <img src="pictures/uchicago2.png" alt="uchicago" style="width: 230px; height: auto;" />
+          <div class="text-block">
+            <p><b>E-mail:</b> <code><span style="font-size: 1.2em;">bettiol@uchicago.edu</span></code></p>
+          </div>          
+        </div>
+      </div>
+      <img src="pictures/profile3.jpg" alt="profile_photo" class="side-image" />
+    </div>
+  </div>
+</body>
+
+<footer>
+  <p class="footer-text">Last modified: <span id="last-modified"></span>
+
+  <script>
+    const lastMod = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById("last-modified").textContent = lastMod.toLocaleDateString('en-US', options);
+  </script>
+
+  </p>
+<!--  <p class="footer-text">© 2025 Marcello Ghini Bettiol</p> -->
+</footer>
+
+</html>

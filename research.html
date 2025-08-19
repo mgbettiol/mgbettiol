@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research | Marcello Ghini Bettiol</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+   <div class="header-container">
+      <div class="site-name">
+        <a href="index.html" style="text-decoration: none; color: white"><span style="font-size: 1.2em;">Marcello Ghini Bettiol</span></a>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link active">Research</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="notes.html" class="nav-link">Math Notes</a>
+        <a href="cv.html" class="nav-link">Bio and CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Research</h1>
+    <p><b>Research Interests:</b> Mathematical Physics, Numerical Analysis, Probability, Random Matrix Theory, Lattice Models in Statistical Physics.</p>   
+    <div class="text-image-row">
+      <div class="text-block">    
+        <h2>Computing Lattice Sums</h2>
+        <p>Ongoing collaboration with <a href="https://www.math.toronto.edu/kserkh/" target="_blank" style="text-decoration: none">Kirill Serkh</a>, <a href="https://research.tue.nl/en/persons/torsten-ke%C3%9Fler" target="_blank" style="text-decoration: none">Torsten Kessler</a>, and <a href="https://rjasanow.num.uni-sb.de/members/buchheit" target="_blank" style="text-decoration: none">Andreas Buchheit</a> to develop an efficient way of computing sums and averages involving <a href="https://en.wikipedia.org/wiki/Real_analytic_Eisenstein_series#Epstein_zeta_function" target="_blank" style="text-decoration: none">Epstein zeta functions</a> over finite lattices, and <a href="https://en.wikipedia.org/wiki/Quasicrystal" target="_blank" style="text-decoration: none">quasicrystals</a> with boundaries. These types of sums are central in many areas of both pure and applied mathematics, with applications going from the study of the distribution of prime numbers to eigenvalues of pseudo-differential operators. In particular, lattice sums involving algebraic powers of quadratic forms can describe long-range interactions in many physical systems; e.g., the Coulomb interaction between charged particles, gravitation, and dipolar interactions in magnetic systems. 
+        </p>
+        <p>Now, the main challenges in performing such ubiquitous sums is describing the discrete system we wish to study in a way that allows computations; and dealing with the loss of translational invariance due to the boundaries and singular long-range interaction terms – which make standard tools like <a href="https://en.wikipedia.org/wiki/Ewald_summation" target="_blank" style="text-decoration: none">Ewald summation</a> fruitless. Our goal is to establish a way to efficiently perform these computations and, through numerical simulations, explore several of its applications in <a href="https://en.wikipedia.org/wiki/Condensed_matter_physics" target="_blank" style="text-decoration: none">Condensed Matter</a> and <a href="https://en.wikipedia.org/wiki/Topological_quantum_field_theory" target="_blank" style="text-decoration: none">Topological Quantum Physics</a>.
+        </p>
+      </div>
+      <img src="pictures/quasicrystal.png" alt="quasicrystal" style="width: 350px; height: auto;" />
+    </div>
+    <div class="text-image-row">
+      <div class="text-block">    
+        <h2>Evaluating the Spectrum of an Airy Integral Operator</h2>
+        <p>Ongoing collaboration with <a href="https://www.math.toronto.edu/kserkh/" target="_blank" style="text-decoration: none">Kirill Serkh</a> and <a href="https://zewenshen.github.io/" target="_blank" style="text-decoration: none">Zewen Shen</a> to efficiently compute the spectrum of an integral operator on the half-line with a shifted <a href="https://en.wikipedia.org/wiki/Airy_function" target="_blank" style="text-decoration: none">Airy function</a> as its kernel. The goal of this project is to develop an algorithm that computes this spectrum in higher accuracy and less time than previous ones. As it turns out, the eigenfunctions of this integral operator appear in the soft-edge scaling limit of the <a href="https://en.wikipedia.org/wiki/Random_matrix#Gaussian_ensembles" target="_blank" style="text-decoration: none">Gaussian Unitary Ensemble (GUE)</a> in <a href="https://en.wikipedia.org/wiki/Random_matrix" target="_blank" style="text-decoration: none">Random Matrix Theory</a>. And, using a special property of this integral operator (bispectrality; i.e., it commutes it a differential operator), we can reduce the problem of computing certain cdfs in the GUE from solving nonlinear ODEs to finding this spectrum – which is a lot cheaper numerically.</p>
+      </div>
+      <img src="pictures/airy.jpeg" alt="airy" style="width: 350px; height: auto;" />
+    </div>
+  </div>
+</body>
+
+<footer>
+  <p class="footer-text">Last modified: <span id="last-modified"></span>
+
+  <script>
+    const lastMod = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById("last-modified").textContent = lastMod.toLocaleDateString('en-US', options);
+  </script>
+
+  </p>
+<!--  <p class="footer-text">© 2025 Marcello Ghini Bettiol</p> -->
+</footer>
+
+</html>

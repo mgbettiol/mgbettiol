@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teaching | Marcello Ghini Bettiol</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+   <div class="header-container">
+      <div class="site-name">
+        <a href="index.html" style="text-decoration: none; color: white"><span style="font-size: 1.2em;">Marcello Ghini Bettiol</span></a>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="teaching.html" class="nav-link active">Teaching</a>
+        <a href="notes.html" class="nav-link">Math Notes</a>
+        <a href="cv.html" class="nav-link">Bio and CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+  <h1>Teaching</h1>
+    <div class="text-image-row">
+      <div class="text-block">    
+        <h2>University of Toronto</h2>
+        <p>Winter 2025 - <a href="https://artsci.calendar.utoronto.ca/course/mat133y1" target="_blank" style="text-decoration: none">Calculus and Linear Algebra for Commerce II</a></p>
+        <p>Fall 2024 - <a href="https://artsci.calendar.utoronto.ca/course/mat133y1" target="_blank" style="text-decoration: none">Calculus and Linear Algebra for Commerce I</a></p>
+      </div>
+      <img src="pictures/board1.jpeg" alt="board" style="width: 350px; height: auto;" />
+    </div>
+  </div>
+</body>
+
+<footer>
+  <p class="footer-text">Last modified: <span id="last-modified"></span>
+
+  <script>
+    const lastMod = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    document.getElementById("last-modified").textContent = lastMod.toLocaleDateString('en-US', options);
+  </script>
+
+  </p>
+<!--  <p class="footer-text">© 2025 Marcello Ghini Bettiol</p> -->
+</footer>
+
+</html>
