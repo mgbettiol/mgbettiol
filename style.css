@@ -130,6 +130,12 @@ img.profile-pic {
   object-fit: cover;
 }
 
+.side-image2 {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
 .text-multi-image-row {
   display: flex;
   align-items: flex-start;
